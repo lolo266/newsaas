@@ -14,7 +14,7 @@ function setupGoogle({ server }) {
   const verify = async (accessToken, refreshToken, profile, done) => {
     let email;
     let avatarUrl;
-
+    let _id;
     if (profile.emails) {
       email = profile.emails[0].value;
     }
