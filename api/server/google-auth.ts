@@ -51,7 +51,6 @@ function setupGoogle({ server }) {
   );
 
   passport.serializeUser((user: UserDocument, done) => {
-/* tslint:disable:no-unused-variable */
     done(null, user._id);
   });
 
