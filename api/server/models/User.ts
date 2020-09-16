@@ -359,7 +359,7 @@ class UserClass extends mongoose.Model {
 
     try {
       await sendEmail({
-        from: `Kelly from saas-app.builderbook.org <${process.env.EMAIL_SUPPORT_FROM_ADDRESS}>`,
+        from: `Clayton from moonshot.industries <${process.env.EMAIL_SUPPORT_FROM_ADDRESS}>`,
         to: [email],
         subject: emailTemplate.subject,
         body: emailTemplate.message,
