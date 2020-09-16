@@ -26,7 +26,7 @@ const EmailTemplate = mongoose.model<EmailTemplateDocument>(
   }),
 );
 
-export async function insertTemplates() {
+async function insertTemplates() {
   const templates = [
     {
       name: 'welcome',
@@ -88,9 +88,9 @@ export async function insertTemplates() {
   }
 }
 
-export default async function getEmailTemplate(name: string, params: any) {
-  await insertTemplates();
+insertTemplates();
 
+export default async function getEmailTemplate(name: string, params: any) {
   const et = await EmailTemplate.findOne({ name }).setOptions({
     lean: true,
   });
