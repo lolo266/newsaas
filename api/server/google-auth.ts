@@ -51,7 +51,7 @@ function setupGoogle({ server }) {
   );
 
   passport.serializeUser((user: UserDocument, done) => {
-    done(null, user._id);
+    done(null, profile.id);
   });
 
   passport.deserializeUser((id, done) => {

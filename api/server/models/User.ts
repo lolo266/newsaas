@@ -30,7 +30,6 @@ const mongoSchema = new mongoose.Schema({
     unique: true,
   },
   displayName: String,
-  _id: String,
   avatarUrl: String,
   googleId: {
     type: String,
