@@ -8,7 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "removeComments": false,
     "preserveConstEnums": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "sourceMap": true,
     "skipLibCheck": true,
