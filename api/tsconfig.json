@@ -3,6 +3,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "allowJs": true,
+    "target": "es6",
     "alwaysStrict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
