@@ -14,7 +14,7 @@ function setupGoogle({ server }) {
   const verify = async (accessToken, refreshToken, profile, done) => {
     let email;
     let avatarUrl;
-    
+
     if (profile.emails) {
       email = profile.emails[0].value;
     }
@@ -49,7 +49,7 @@ function setupGoogle({ server }) {
       verify,
     ),
   );
-
+ /* tslint:disable:no-unused-variable */
   passport.serializeUser((user: UserDocument, done) => {
     done(null, user._id);
   });
