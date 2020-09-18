@@ -11,7 +11,7 @@ npm-debug.log
 .vscode/
 node_modules/
 .coverage
-
+.env
 now.json
 .note
 
